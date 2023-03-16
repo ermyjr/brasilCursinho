@@ -81,12 +81,12 @@ export default function Navbar() {
             </Link>
             <Link href="/Projects">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-              Programa Social
+              Detalhes do programa social
               </li>
             </Link>
             <Link href="/Contact">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-              Sobre Nós
+              Sobre nós
               </li>
             </Link>
           </ul>
@@ -111,7 +111,14 @@ export default function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-             
+              <Link href="/">
+                <Image
+                  src="/../public/assets/navLogo.png"
+                  width="45"
+                  height="25"
+                  alt="/"
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -145,7 +152,7 @@ export default function Navbar() {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
-              Sobre Nós
+                Entre em contato
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <Links/>
