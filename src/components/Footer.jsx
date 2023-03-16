@@ -14,8 +14,8 @@ function Footer() {
             rel="noreferrer"
           >
             <div
-              className="rounded-[100%] shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-              hover:scale-110 ease-in duration-300"
+              className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
+    hover:scale-110 ease-in duration-300"
             >
               <FaLinkedinIn className="max-h-[16px]" />
             </div>
@@ -26,30 +26,31 @@ function Footer() {
             rel="noreferrer"
           >
             <div
-              className="rounded-[100%] shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-              hover:scale-110 ease-in duration-300"
+              className="rounded-full shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
+    hover:scale-110 ease-in duration-300"
             >
               <FaGithub className="max-h-[16px]" />
             </div>
           </a>
           <Link href="/Contact">
             <div
-              className="rounded-[100%] shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-              hover:scale-110 ease-in duration-300"
+              className="rounded-full shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
+    hover:scale-110 ease-in duration-300"
             >
               <AiOutlineMail className="max-h-[16px]" />
             </div>
           </Link>
-          <div
-            className="rounded-[100%] shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-            hover:scale-110 ease-in duration-300"
-          >
-            <Link href="/curriculo">
+          <Link href="/curriculo">
+            <div
+              className="rounded-full shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
+    hover:scale-110 ease-in duration-300"
+            >
               <FaWhatsapp className="max-h-[16px]" />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
+
       <div>
         <p className="flex justify-center">
           Copyright © 2023
