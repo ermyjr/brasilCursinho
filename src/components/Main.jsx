@@ -1,8 +1,6 @@
-import Link from "next/link";
+
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 
 const Main = () => {
   return (
@@ -22,49 +20,7 @@ const Main = () => {
             entregue e o sentimento da gratidão me move para entregar sempre o
             melhor de mim.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a
-              href="https://www.linkedin.com/in/isaque-batista-de-oliveira-a3b619236/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-              >
-                <FaLinkedinIn />
-              </div>
-            </a>
-            <a
-              href="https://github.com/IsaqueBatista"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-              >
-                <FaGithub />
-              </div>
-            </a>
-            <Link href="/Contact">
-              <div
-                className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-              >
-                <AiOutlineMail />
-              </div>
-            </Link>
-            <Link href="/curriculo">
-              <div
-                className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-              >
-                <BsFillPersonLinesFill />
-              </div>
-            </Link>
-          </div>
-        </div>
+                 </div>
       </div>
     </div>
   );
