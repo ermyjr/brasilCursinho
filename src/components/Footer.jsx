@@ -1,61 +1,19 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import Link from "next/link";
+import Links from './Links';
+
+
 
 function Footer() {
   return (
-    <footer className="bg-[#5651e5] text-white">
+    <footer className="bg-gray-700 text-white p-5">
+    
+      <Links/>
       <div>
-        <div className="flex items-center justify-center m-auto gap-[50px] py-4">
-          <a
-            href="https://www.linkedin.com/in/isaque-batista-de-oliveira-a3b619236/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div
-              className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-    hover:scale-110 ease-in duration-300"
-            >
-              <FaLinkedinIn className="max-h-[16px]" />
-            </div>
-          </a>
-          <a
-            href="https://github.com/IsaqueBatista"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div
-              className="rounded-full shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-    hover:scale-110 ease-in duration-300"
-            >
-              <FaGithub className="max-h-[16px]" />
-            </div>
-          </a>
-          <Link href="/Contact">
-            <div
-              className="rounded-full shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-    hover:scale-110 ease-in duration-300"
-            >
-              <AiOutlineMail className="max-h-[16px]" />
-            </div>
-          </Link>
-          <Link href="/curriculo">
-            <div
-              className="rounded-full shadow-lg shadow-gray-400 max-h-[16px] p-6 cursor-pointer 
-    hover:scale-110 ease-in duration-300"
-            >
-              <FaWhatsapp className="max-h-[16px]" />
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      <div>
-        <p className="flex justify-center">
+        <p className="flex justify-center gap-2">
           Copyright © 2023
-          <a href="https://www.example.com/">Example Company</a>. All rights
-          reserved.
+          <a href="https://www.example.com/" target="_blank" rel="noreferrer">
+            Example Company
+          </a>
+          . All rights reserved.
         </p>
       </div>
     </footer>

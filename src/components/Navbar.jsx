@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import NavLogo from "../../public/assets/navLogo.png";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Links from './Links';
+
 import { useRouter } from "next/router";
 
 export default function Navbar() {
@@ -76,17 +76,17 @@ export default function Navbar() {
             </Link>
             <Link href="/About">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-                Sobre
+              Ações sociais
               </li>
             </Link>
             <Link href="/Projects">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-                Projetos
+              Programa Social
               </li>
             </Link>
             <Link href="/Contact">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-                Contato
+              Sobre Nós
               </li>
             </Link>
           </ul>
@@ -111,25 +111,13 @@ export default function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href="/">
-                <Image
-                  src="/../public/assets/navLogo.png"
-                  width="45"
-                  height="25"
-                  alt="/"
-                />
-              </Link>
+             
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
-            </div>
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text-center">
-                Vamos construir algo incrível juntos
-              </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -141,12 +129,12 @@ export default function Navbar() {
               </Link>
               <Link href="/About">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Sobre
+                Ações
                 </li>
               </Link>
               <Link href="/Projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projetos
+                Programa social
                 </li>
               </Link>
               <Link href="/Contact">
@@ -157,65 +145,11 @@ export default function Navbar() {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
-                Entre em contato
+              Sobre Nós
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a
-                  href="https://www.linkedin.com/in/isaque-batista-de-oliveira-a3b619236/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer 
-                hover:scale-105 ease-in duration-300"
-                  >
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-
-                <a
-                  href="https://github.com/IsaqueBatista"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer 
-                hover:scale-105 ease-in duration-300"
-                  >
-                    <FaGithub />
-                  </div>
-                </a>
-
-                <a
-                  href="https://api.whatsapp.com/send?phone=5534992225485&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20Isaque%2C%20seja%20bem-vindo!"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer 
-                hover:scale-105 ease-in duration-300"
-                  >
-                    <FaWhatsapp />
-                  </div>
-                </a>
-
-                <Link href="/Contact">
-                  <div onClick={() => setNav(false)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer 
-                hover:scale-105 ease-in duration-300"
-                  >
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-
-                <Link href="/curriculo">
-                  <div onClick={() => setNav(false)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer 
-                hover:scale-105 ease-in duration-300"
-                  >
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
+                <Links/>
+              
               </div>
             </div>
           </div>
