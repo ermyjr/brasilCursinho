@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import contact from "../../public/assets/contact.jpg";
+import Links from './Links';
+
+
 
 export default function Contact() {
   return (
@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-3">
-            <div className="lg:p-4 h-full">
+            <div className="lg:p-4 h-full ">
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
@@ -21,70 +21,18 @@ export default function Contact() {
                   alt="/"
                 />
               </div>
-              <div>
-                <h2 className="pt-2">Isaque Batista</h2>
-                <p className="pb-4 pt-2">Desenvolvedor Fron-End</p>
-                <p className="">Traga-me suas ideias e desafios.</p>
+              <div className="m-[10px]" >
+                <h2 className="pt-2">Junte-se a Nós</h2>
               </div>
-              <div>
-                <p className="uppercase pt-7">Conecte-se Comigo</p>
-
-                <div className="flex items-center justify-around py-3">
-                  <a
-                    href="https://www.linkedin.com/in/isaque-batista-de-oliveira-a3b619236/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div
-                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-                    >
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://github.com/IsaqueBatista"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div
-                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-                    >
-                      <FaGithub />
-                    </div>
-                  </a>
-
-                  <a
-                  href="https://api.whatsapp.com/send?phone=5534992225485&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20Isaque%2C%20seja%20bem-vindo!"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                    hover:scale-110 ease-in duration-300"
-                  >
-                    <FaWhatsapp />
-                  </div>
-                </a>
-
-                  <Link href="/curriculo">
-                    <div
-                      className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer 
-                hover:scale-110 ease-in duration-300"
-                    >
-                      <BsFillPersonLinesFill />
-                    </div>
-                  </Link>
-                </div>
+              <div className=" m-[35px] items-center ">
+                  <Links/>
               </div>
             </div>
           </div>
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-3">
-              <form action="https://formsubmit.co/isaquebatista1716@gmail.com" method="POST">
+              <form action="https://formsubmit.co/ermyjr94@gmail.com" method="POST">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
 
                   <input type="hidden" name="_captcha" value="false"/>

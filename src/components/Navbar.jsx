@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import NavLogo from "../../public/assets/navLogo.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Links from './Links';
 
@@ -54,16 +52,7 @@ export default function Navbar() {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <Image
-            src={NavLogo}
-            alt="/"
-            width="80"
-            // width='125'
-            height="50"
-          />
-        </Link>
-
+        
         <div className="mr-5">
           <ul
             style={{ color: `${linkColor}` }}
@@ -74,12 +63,12 @@ export default function Navbar() {
                 Home
               </li>
             </Link>
-            <Link href="/About">
+            <Link href="/Actions">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
               Ações sociais
               </li>
             </Link>
-            <Link href="/Projects">
+            <Link href="/SocialProjects">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
               Detalhes do programa social
               </li>
@@ -111,15 +100,7 @@ export default function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href="/">
-                <Image
-                  src="/../public/assets/navLogo.png"
-                  width="45"
-                  height="25"
-                  alt="/"
-                />
-              </Link>
-              <div
+                            <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
@@ -134,14 +115,14 @@ export default function Navbar() {
                   Home
                 </li>
               </Link>
-              <Link href="/About">
+              <Link href="/Actions">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                 Ações
                 </li>
               </Link>
-              <Link href="/Projects">
+              <Link href="/SocialProjects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Programa social
+                Programa Social
                 </li>
               </Link>
               <Link href="/Contact">

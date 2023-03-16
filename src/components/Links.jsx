@@ -9,7 +9,7 @@ function Links() {
 hover:scale-110 ease-in duration-300"
       >
         <a
-          href="https://www.linkedin.com/in/isaque-batista-de-oliveira-a3b619236/"
+          href="https://www.linkedin.com/"
           target="_blank"
           rel="noreferrer"
         >

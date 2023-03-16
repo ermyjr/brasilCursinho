@@ -1,14 +1,19 @@
 import axios from 'axios';
 
 async function fetchUserData() {
-    let response = null;
   try { 
-    response = await axios.get('https://my-json-server.typicode.com/brasilcursinhos/fake-rest-api/');
+    const response = await axios.get('https://my-json-server.typicode.com/brasilcursinhos/fake-rest-api/');
     return response.data;
   } catch (error) {
     console.error(error);
+    return [];
   }
-   return response.status == 200? response.data: []
 }
 
-const Name = fetchUserData.filter(1)
+async function fetchData() {
+  const userData = await fetchUserData();
+  console.log(userData);
+
+}
+
+fetchData();
