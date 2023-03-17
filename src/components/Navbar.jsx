@@ -14,6 +14,7 @@ export default function Navbar() {
 
   useEffect(() => {
     if (
+      
       router.asPath === "/loginNext" ||
       router.asPath === "/travel" ||
       router.asPath === "/hamburgueria" ||
