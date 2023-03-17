@@ -8,24 +8,9 @@ import { useRouter } from "next/router";
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [navBg, ] = useState("#ecf0f3");
+  const [linkColor, ] = useState("#1f2937");
   const router = useRouter();
-
-  useEffect(() => {
-    if (
-      router.asPath === "/loginNext" ||
-      router.asPath === "/travel" ||
-      router.asPath === "/hamburgueria" ||
-      router.asPath === "/converter"
-    ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
-  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -63,21 +48,24 @@ export default function Navbar() {
                 Home
               </li>
             </Link>
-            <Link href="/Actions">
-              <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-              Ações sociais
-              </li>
-            </Link>
+            
             <Link href="/SocialProjects">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
-              Detalhes do programa social
+              Programa social
               </li>
             </Link>
+            <Link href="/Actions">
+              <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
+              Ações 
+              </li>
+            </Link>
+
             <Link href="/Contact">
               <li className="ml-4 mr-4 text-sm uppercase hover:border-b">
               Sobre nós
               </li>
             </Link>
+            
           </ul>
 
           <div onClick={handleNav} className="md:hidden">
@@ -132,7 +120,7 @@ export default function Navbar() {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#0901f8]">
                 Entre em contato
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">

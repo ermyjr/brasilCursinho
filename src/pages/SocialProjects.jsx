@@ -1,6 +1,7 @@
 import React from "react";
-import loginNextImg from "../../public/assets/projects/loginNext.png";
+import mozNext from "../../public/assets/projects/mozNext.jpeg";
 import ProjectItem from "@/components/ProjectItem";
+
 
 export default function Projects() {
   return (
@@ -10,10 +11,10 @@ export default function Projects() {
         
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            tittle="Prejetos Sociais"
-            backgroundImg={loginNextImg}
+            tittle="Educação sem distância"
+            backgroundImg={mozNext}
             country='Moçambique'
-            projectUrl="/loginNext"
+            projectUrl="/projectNext"
           />
         </div>
       </div>

@@ -9,7 +9,8 @@ export default function Contact() {
   return (
     <div className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <h2 className="py-4">Entre em contato</h2>
+        <h2 className="py-4"> Venha </h2>
+        <p> </p>
         <div className="grid lg:grid-cols-5 gap-8">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-3">
@@ -22,7 +23,7 @@ export default function Contact() {
                 />
               </div>
               <div className="m-[10px]" >
-                <h2 className="pt-2">Junte-se a Nós</h2>
+                <h2 className="pt-2">Entre em contato</h2>
               </div>
               <div className=" m-[35px] items-center ">
                   <Links/>
