@@ -1,20 +1,27 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { fetchUserData } from "../components/Api";
 import contact from "../../public/assets/contact.jpg";
 import Links from './Links';
 
-
-
 export default function Contact() {
+  const [programs, setPrograms] = useState([]);
+  useEffect(() => {
+    const loadData = async () => {
+      setPrograms(await fetchUserData());
+    };
+    loadData();
+  }, []);
+
   return (
     <div className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <h2 className="py-4"> Venha </h2>
-        <p> </p>
-        <div className="grid lg:grid-cols-5 gap-8">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-          {/* left */}
+        <h2 className="py-4 uppercase "> venha impactar </h2>
+        <p className="m-[20px]">{programs.impact} </p>
+        
+        <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-3">
-            <div className="lg:p-4 h-full ">
+            <div className="lg:p-4 h-full">
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
@@ -22,11 +29,11 @@ export default function Contact() {
                   alt="/"
                 />
               </div>
-              <div className="m-[10px]" >
+              <div className="m-[10px]">
                 <h2 className="pt-2">Entre em contato</h2>
               </div>
-              <div className=" m-[35px] items-center ">
-                  <Links/>
+              <div className=" m-[35px] items-center">
+                <Links />
               </div>
             </div>
           </div>
@@ -35,10 +42,8 @@ export default function Contact() {
             <div className="p-3">
               <form action="https://formsubmit.co/ermyjr94@gmail.com" method="POST">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-
-                  <input type="hidden" name="_captcha" value="false"/>
-                  <input type="hidden" name="_next" value="https://tela-obrigado-portfolio.netlify.app/"/>
-
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_next" value="https://tela-obrigado-portfolio.netlify.app/" />
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-1">Nome</label>
                     <input
