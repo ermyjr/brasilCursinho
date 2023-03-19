@@ -38,7 +38,7 @@ export default function projectNext() {
           <p> {programs.objectives}</p>
           <br/>
           <a
-            href="https://github.com/ermyjr/BrasilCursinho"
+            href="https://github.com/ermyjr/brasilCursinhos"
             target="_blank"
             rel="noreferrer"
           >
