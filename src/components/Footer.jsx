@@ -10,7 +10,7 @@ function Footer() {
       <div>
         <p className="flex justify-center gap-2">
           Copyright © 2023
-          <a href="https://www.example.com/" target="_blank" rel="noreferrer">
+          <a href="https://ermyjr.github.io/portifolio/" target="_blank" rel="noreferrer">
             Example Company
           </a>
           . All rights reserved.
