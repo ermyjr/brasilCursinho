@@ -5,7 +5,6 @@ import Links from './Links';
 function Footer() {
   return (
     <footer className="bg-gray-700 text-white p-5">
-    
       <Links/>
       <div>
         <p className="flex justify-center gap-2">
